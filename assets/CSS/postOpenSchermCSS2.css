@@ -1,0 +1,536 @@
+body {
+    padding-bottom: 200px;
+    font-family: Satoshi-Regular;
+    background-color: #F9F4F6;
+}
+
+/* Navigation */
+
+select{
+    background: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select option   {
+    color: #e54040;
+}
+
+select:hover{
+    border: none;
+    /*color: #ffffff;*/
+}
+
+
+/* Eerste blok met berg als achtegrond*/
+.header{
+    width: 100%;
+    /*background-image: linear-gradient(rgba(0,0,0,0),rgba(30,9,40,0.7)),url(https://wallpaperaccess.com/full/825191.jpg);*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+}
+
+/*Navigatiebalk */
+nav{
+    display: flex;
+    padding:  10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #e54040;
+    border-radius: 0px;
+}
+
+/* Corendon Logo linksbovenin*/
+nav img{
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover{
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid{
+    display: none;
+}
+
+nav .fa-solid:hover{
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links{
+        position: absolute;
+        background-color: #e54040;
+        height: 100vh;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal{
+    margin-left: -25px;
+}
+/* General and body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    width: 500px;
+    min-width: 260px;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.PostImage {
+    border-radius: 10px 10px 0px 0px;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.PostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locatie{
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    justify-content: space-between;
+    padding-right: 6px;
+    padding-left: 14px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+
+.locatie div {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    justify-content: right;
+}
+
+.locatie div img {
+    margin-right: 3px;
+}
+
+
+.locatie div p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.PostActiviteit {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding-left: 14px;
+}
+
+.postPeriode {
+    margin: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FC6266;
+    padding-left: 14px;
+    margin-bottom: 16px;
+}
+
+.Bijschrift h1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding-left: 14px;
+}
+
+.Bijschrift p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    padding-left: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bericht {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.bericht h1 {
+    font-size: 20px ;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto ;
+    justify-content: center;
+}
+
+.bericht textarea{
+    border-radius: 5px;
+    border: 0;
+    resize: none;
+    outline: none;
+    background: whitesmoke;
+
+}
+
+.versturen {
+    flex: 1 1 auto;
+    horiz-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    padding: 2%;
+
+    border-radius: 10px;
+    border: none;
+    background: #fc6266;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.versturen:hover{
+    cursor: pointer;
+    background-color: #EDB5B7;
+}
+
+.moveButton {
+    width: 65.58px;
+    height: 44px;
+    background: #fc6266;
+    margin: 7.5px;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.flagButton img {
+    height: 20px;
+    width: auto;
+    margin: 7.5px;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+}
+.flagButton {
+    height: 20px;
+    margin-top: 650px;
+    margin-left: 210px;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    color: #555555;
+    font-style: italic;
+    opacity: 70%;
+}
+
+.flagButton p {
+    margin-top: 10px;
+}
+
+.flagButton:hover{
+    cursor: pointer;
+}
+
+.disableButton {
+    pointer-events: none;
+    background-color: lightgrey;
+    opacity: 50%;
+}
+
+
+
+.boek   {
+    width: 130px;
+    height: 34px;
+    background: white;
+    margin-left: 70%;
+    margin-top: 0px;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    color: #0048ff;
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.boek:hover   {
+    cursor: pointer;
+    color: #0da5c0;
+}
+
+.moveButton:hover {
+    cursor: pointer;
+    background-color: #EDB5B7;
+}
+
+
+.moveButton img {
+    max-height: 100%;
+}
+.displaynone {
+    display: none;
+}
+
+@media (min-width: 701px) {
+    .nav-links{
+        display: block; !important;
+    }
+}
+@media (max-width: 700px){
+    .nav-links {
+        position: absolute;
+        background-color: rgb(229, 64, 64);
+        height: 300px;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 520px) {
+    article {
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .flagButton {
+        margin-left: 30%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .boek {
+        margin-left: 60%;
+    }
+    .flagButton {
+        margin-left: 10%;
+    }
+
+}
+
+
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+    url('../fonts/Satoshi-Light.woff') format('woff'),
+    url('../fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('../fonts/Satoshi-Italic.woff') format('woff'),
+    url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+    url('../fonts/Satoshi-Black.woff') format('woff'),
+    url('../fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}

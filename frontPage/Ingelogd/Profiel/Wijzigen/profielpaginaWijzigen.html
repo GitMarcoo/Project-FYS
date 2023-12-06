@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profiel pagina</title>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="../../../../assets/js/configNuri.js"></script>
+    <script src="../../../../assets/js/profielpaginaWijzigen.js"></script>
+    <script src="../../../../assets/js/taal.js"></script>
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../assets/CSS/profielpaginaWijzigen.css">
+
+
+</head>
+<body>
+<header id="test" class="header"> <nav>
+    <a href="../../../../index.html"> <img class="corendonLogo" src="../../../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+    <div class=" displaynone nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        <ul>
+            <li> <i class="fas fa-home"></i> <a href="../../frontpageIngelogdGebruiker.html" data-translate="header.home">  Home </a> </li>
+            <li> <i class="fa fa-fw fa-envelope"></i> <a href="../../Contact/contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+            <li> <i class="far fa-clone"></i> <a href="../../Gebruiker/pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+            <li> <i class="fas fa-user-edit"></i> <a href="../profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+
+            <li> </li>
+            <li class="headerTaal">
+                <i class="fas fa-language"></i>
+                <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Espanol</option>
+            </select>
+            </li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+</nav>
+
+</header>
+
+
+
+<article class="profielbox">
+    <section class="profile">
+        <section class="name" id="overzichtName">
+        </section>
+    </section>
+    <article class="sidenav-url">
+        <section class="url">
+            <a href="../profielpagina.html" class="active" id="profielWijzigen" data-translate="profielpagina.profiel">Profiel</a>
+        </section>
+        <section class="url">
+            <section class="Interesses">
+                <section class="interesse-box">
+                    <label data-translate="profielpagina.interesse1">Interesse1</label>
+                    <input type="text" placeholder="Interesse" id="interesse1" required>
+                </section>
+                <section class="interesse-box">
+                    <label data-translate="profielpagina.interesse2">Interesse2</label>
+                    <input type="text" placeholder="Interesse" id="interesse2" required>
+                </section>
+                <section class="interesse-box">
+                    <label data-translate="profielpagina.interesse3">Interesse3</label>
+                    <input type="text" placeholder="Interesse" id="interesse3" required>
+                </section>
+
+            </section>
+            <a href="#" class="active" id="loguit" data-translate="profielpagina.loguit">Log uit</a>
+        </section>
+
+    </article>
+    <article class="zoekVenster hidden" id="zoekVenster">
+        <section>
+            <ul class="zoekVensterTextVak">
+                <li class="hidden" id="result1"><a id="searchResult1">Spaans</a></li>
+                <li class="hidden" id="result2"><a id="searchResult2">Kitesurfen</a></li>
+                <li class="hidden" id="result3"><a id="searchResult3">woensdag</a></li>
+                <li class="hidden" id="result4"><a id="searchResult4">heerhugowaard</a></li>
+            </ul>
+        </section>
+    </article>
+</article>
+
+<article class="main">
+    <h2 data-translate="profielpagina.profiel">Profiel</h2>
+    <hr>
+    <section class="card">
+        <section class="card-body">
+
+            <section class="user-box">
+                <label data-translate="profielpagina.naam">Naam</label>
+                <input type="text" placeholder="naam" id="user-name" required>
+            </section>
+
+            <section class="user-box">
+                <label data-translate="profielpagina.achternaam">Achternaam</label>
+                <input type="text" placeholder="achternaam" id="user-achternaam" required>
+            </section>
+
+            <section class="user-box">
+                <label data-translate="profielpagina.leeftijd">Leeftijd</label>
+                <input type="text" placeholder="Leeftijd" id="user-age" name="text" required>
+            </section>
+
+            <section class="Register">
+<!--                <button type="submit" class="opslaan" id="opslaanProfiel">Opslaan</button>-->
+                <a style="text-decoration: none" href="#"  class="active" id="opslaanProfiel" data-translate="profielpagina.opslaan">Opslaan</a>
+
+            </section>
+
+        </section>
+
+    </section>
+</article>
+</body>
+</html>

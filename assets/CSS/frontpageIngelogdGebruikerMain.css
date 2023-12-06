@@ -1,0 +1,296 @@
+/* General and body */
+body {
+    font-family: Satoshi-Regular;
+    background-color: #F9F4F6;
+}
+
+/* Navigation */
+
+.contact {
+    font-size: 120%;
+}
+
+.laatstBekeken a{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sectoinTitel{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #4A4A4A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.postLaatstBekeken {
+    animation-name: articleMoveback;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.postLaatstBekeken .PostActiviteit {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding-left: 14px;
+}
+.postCategorie .PostActiviteit {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.postLaatstBekeken .postPeriode {
+    margin: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FC6266;
+    padding-left: 14px;
+    margin-bottom: 16px;
+}
+
+.postCategorie .postPeriode {
+    margin: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FC6266;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.moveButton:hover {
+    background-color: #FC6266;
+    cursor: pointer;
+}
+
+
+.postCategorie .Bijschrift h1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.postLaatstBekeken .Bijschrift h1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding-left: 14px;
+}
+
+.postLaatstBekeken .Bijschrift p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    padding-left: 14px;
+}
+
+.postCategorie .Bijschrift p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    padding:0;
+    height: 40px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+.Zoekbalk {
+    font-size: 1rem;
+}
+
+.Zoekbalk input{
+    border-radius: 5px;
+    border: 1px darkred solid;
+}
+
+.Zoekbalk button {
+    border-radius: 5px;
+    border: 1px darkred solid;
+}
+
+
+.BijschriftTitel {
+    font-size: 100%;
+}
+
+.BijschriftText {
+    font-size: 0.8rem;
+}
+
+.PostHeader {
+    font-size: 100%;
+}
+
+.Taal ul {
+    animation-name: dropDownAnimation;
+    animation-duration: 0.5s;
+}
+
+
+.periodeLocatie {
+    font-size: 80%;
+}
+section a:link {
+    text-decoration: none;
+    color: black;
+}
+section a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes articleMove {
+    from {}
+    to {transform: translateY(-10px)}
+}
+
+@keyframes articleMoveback {
+    from {transform: translateY(-10px)}
+    to {}
+}
+
+@keyframes dropDownAnimation {
+    from {transform: translateY(-50px)}
+    to {}
+}
+
+@keyframes scaleUp {
+    from{}
+    to{transform: scale(102%)}
+}
+@keyframes scaleDown {
+    from{transform: scale(102%)}
+    to{}
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+    url('../fonts/Satoshi-Light.woff') format('woff'),
+    url('../fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('../fonts/Satoshi-Italic.woff') format('woff'),
+    url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+    url('../fonts/Satoshi-Black.woff') format('woff'),
+    url('../fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+
+
+

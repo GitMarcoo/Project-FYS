@@ -1,0 +1,347 @@
+body {
+    background-color: #F9F4F6;
+    font-family: Satoshi-Regular;
+
+}
+
+
+.title {
+    font-family: Satoshi-Regular, cursive;
+    padding-top: 15px;
+    position: absolute;
+    left: 45%;
+}
+
+.profielbox {
+    display: flex;
+    flex-direction: column;
+    font-family: Satoshi-Regular;
+    margin-top: 8%;
+    margin-left: 6%;
+    margin-right: 5%;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    box-shadow: 1px 1px 0px 1px #FC6266;
+
+}
+
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+hr {
+    margin-right: 95%;
+    background-color: red;
+}
+
+.hr2 {
+    margin-right: 93%;
+    background-color: red;
+}
+
+.interesses {
+    color: black;
+    margin-left: auto;
+    text-align: left;
+    margin-left: 22%;
+    margin-top: 20%;
+}
+
+.profile img {
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+.name {
+    font-family: Satoshi-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15%;
+}
+
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+    height: 50%;
+}
+
+.url p {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.interesse-font {
+    font-weight: bold;
+
+}
+
+.url a {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    color: #818181;
+    display: flex;
+    font-size: 20px;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.url a:hover, .url .active {
+    background-color: #FC6266;
+    border-color: #FC6266;
+    border-radius: 5px;
+    color: white;
+    margin-left: 14%;
+    width: 60%;
+}
+
+/* Main */
+.main {
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 3%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+
+.main h2 {
+    color: black;
+    font-family: Satoshi-Regular;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    font-family: Satoshi-Regular;
+    margin-top: 4%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 1px #FC6266;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+
+}
+
+
+.main .card table {
+    font-family: Satoshi-Regular;
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 90%;
+}
+
+.main .card table td {
+    border-bottom: #EB1C24 solid 1px;
+
+}
+
+.main .card table tr {
+    border-bottom: #EB1C24 solid 1px;
+}
+
+/**
+nav bar
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+select {
+    background: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select:hover {
+    border: none;
+    color: white;
+    background: #E54040FF;
+}
+
+/*Navigatiebalk */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(229, 64, 64);
+    /*background: #eb1c24;*/
+}
+
+/* Corendon Logo linksbovenin*/
+nav img {
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+.fas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fa {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.far {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover {
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid {
+    display: none;
+}
+
+nav .fa-solid:hover {
+    border-radius: 10px;
+    background-color: #ef5350;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 720px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links {
+        position: absolute;
+        background-color: rgb(229, 64, 64);
+        height: 300px;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal {
+    margin-left: -25px;
+}
+
+.displaynone{
+    display: none;
+}
+
+@media (min-width: 701px) {
+    .nav-links{
+        display: block; !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .main {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 260px;
+
+    }
+    .main .card{
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+    .profielbox {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        min-width: 260px;
+    }
+    .profile {
+        height: 50px;
+    }
+}

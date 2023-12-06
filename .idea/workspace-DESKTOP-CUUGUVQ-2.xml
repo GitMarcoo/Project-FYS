@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5bfeb06f-9796-4ead-a52a-a7b1ccab3928" name="Changes" comment="width en kleur aanpassing" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FfFY9APjak0IsZCLIgCGJYAfDj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/marco/OneDrive - HvA/IdeaProjects/BsA _2.0",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\IdeaProjects\team-4\assets" />
+      <recent name="C:\Users\marco\IdeaProjects\team-4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\IdeaProjects\team-4\Assets\frontpage_ingelogd_gebruiker\stylesheets" />
+      <recent name="C:\Users\marco\IdeaProjects\team-4\Assets\frontpage_ingelogd_gebruiker" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5bfeb06f-9796-4ead-a52a-a7b1ccab3928" name="Changes" comment="" />
+      <created>1664875276644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664875276644</updated>
+      <workItem from="1664875277906" duration="809000" />
+      <workItem from="1665316476997" duration="22999000" />
+      <workItem from="1665345812093" duration="81000" />
+      <workItem from="1665393073532" duration="81000" />
+      <workItem from="1665395180223" duration="612000" />
+      <workItem from="1665402771631" duration="2476000" />
+      <workItem from="1665470290958" duration="3396000" />
+      <workItem from="1665473925740" duration="68000" />
+      <workItem from="1665486749560" duration="1652000" />
+      <workItem from="1665499511456" duration="340000" />
+      <workItem from="1665499879584" duration="59000" />
+      <workItem from="1665561693772" duration="127000" />
+      <workItem from="1665564625869" duration="48000" />
+      <workItem from="1665747801005" duration="65000" />
+      <workItem from="1666019017929" duration="13608000" />
+      <workItem from="1666103960963" duration="41000" />
+      <workItem from="1666274750227" duration="112000" />
+      <workItem from="1666275250161" duration="93000" />
+      <workItem from="1666275473166" duration="1965000" />
+      <workItem from="1666339835637" duration="18642000" />
+      <workItem from="1666520275630" duration="39000" />
+      <workItem from="1666528692585" duration="2114000" />
+      <workItem from="1666537657215" duration="16305000" />
+      <workItem from="1666619375600" duration="1550000" />
+      <workItem from="1666620955203" duration="187000" />
+      <workItem from="1666625529129" duration="6216000" />
+      <workItem from="1666638266824" duration="125000" />
+      <workItem from="1666680062475" duration="6798000" />
+      <workItem from="1666989929035" duration="15000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1665402824854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665402824854</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Login verandert naar index (hierdoor word de eerste pagina gepakt) en index.html opgeschoont.">
+      <created>1665471672599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665471672599</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Assets naam verandert naar assets en nav bar login scherm gefixt">
+      <created>1665487243268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665487243268</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Assets naam verandert naar assets">
+      <created>1665487368519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665487368519</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Assets naam verandert naar assets">
+      <created>1665499229226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665499229226</updated>
+    </task>
+    <task id="LOCAL-00006" summary="frontpage_ingelogd_gebruiker.html aangepast en page_mijn_posts.html gestart">
+      <created>1666035174871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666035174871</updated>
+    </task>
+    <task id="LOCAL-00007" summary="verder aan pagemijnposts">
+      <created>1666036182144</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666036182144</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pagemijnpost voor nu af">
+      <created>1666347788935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666347788935</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pagemijnpost textarea aanpassing">
+      <created>1666351670580</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666351670581</updated>
+    </task>
+    <task id="LOCAL-00010" summary="imgs">
+      <created>1666351997901</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666351997901</updated>
+    </task>
+    <task id="LOCAL-00011" summary="navbar update en contact toegevoegd">
+      <created>1666557983752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666557983752</updated>
+    </task>
+    <task id="LOCAL-00012" summary="width en kleur aanpassing">
+      <created>1666621126836</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666621126836</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="IMG geupload" />
+    <MESSAGE value="Login verandert naar index (hierdoor word de eerste pagina gepakt) en index.html opgeschoont." />
+    <MESSAGE value="Assets naam verandert naar assets en nav bar login scherm gefixt" />
+    <MESSAGE value="Assets naam verandert naar assets" />
+    <MESSAGE value="frontpage_ingelogd_gebruiker.html aangepast en page_mijn_posts.html gestart" />
+    <MESSAGE value="verder aan pagemijnposts" />
+    <MESSAGE value="pagemijnpost voor nu af" />
+    <MESSAGE value="pagemijnpost textarea aanpassing" />
+    <MESSAGE value="imgs" />
+    <MESSAGE value="navbar update en contact toegevoegd" />
+    <MESSAGE value="width en kleur aanpassing" />
+    <option name="LAST_COMMIT_MESSAGE" value="width en kleur aanpassing" />
+  </component>
+</project>

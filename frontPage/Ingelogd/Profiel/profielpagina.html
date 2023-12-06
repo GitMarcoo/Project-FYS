@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profiel pagina</title>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../assets/CSS/profielpagina.css">
+    <script src="../../../assets/js/configNuri.js"></script>
+    <script src="../../../assets/js/profielpagina.js"></script>
+    <script src="../../../assets/js/taal.js"> </script>
+
+</head>
+<body>
+
+<header id="test" class="header"> <nav>
+    <a href="../../../index.html"> <img class="corendonLogo" src="../../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+    <div  class=" displaynone nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()" id="menu"></i>
+        <ul>
+            <li> <i class="fas fa-home"></i> <a href="../frontpageIngelogdGebruiker.html" data-translate="header.home">  Home </a> </li>
+            <li> <i class="fa fa-fw fa-envelope"></i> <a href="../Contact/contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+            <li> <i class="far fa-clone"></i> <a href="../Gebruiker/pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+            <li> <i class="fas fa-user-edit"></i> <a href="profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+            <li> </li>
+            <li class="headerTaal">
+                <i class="fas fa-language"></i>
+                <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Espanol</option>
+            </select>
+            </li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+</nav>
+
+</header>
+
+<article class="profielbox">
+    <section class="profile">
+        <section class="name" id="overzichtName">
+
+        </section>
+
+    </section>
+    <article class="sidenav-url">
+
+        <div class="url">
+            <a class="active" href="Wijzigen/profielpaginaWijzigen.html" data-translate="profielpagina.wijzigen">Profiel wijzigen</a>
+            <div class="Interesses">
+                <p class="interesse-font" data-translate="profielpagina.interesses"> Interesses</p>
+                <p>
+                    <em id="interesse_1" >Interesse 1: </em>
+                </p>
+                <p>
+                    <em id="interesse_2" >Interesse 2: </em>
+                </p>
+                <p>
+                    <em id="interesse_3" >Interesse 3: </em>
+                </p>
+            </div>
+            <a href="#" class="active" id="loguit" data-translate="profielpagina.loguit">Log uit</a>
+        </div>
+    </article>
+</article>
+<article class="main">
+    <h2 data-translate="profielpagina.profiel">Profiel</h2>
+    <hr>
+    <section class="card">
+        <section class="card-body">
+            <i class="fa fa-pen fa-xs edit"></i>
+            <table>
+                <tbody>
+                <tr>
+                    <td data-translate="profielpagina.naam">Naam</td>
+                    <td>:</td>
+                    <td id="voornaam"></td>
+                </tr>
+                <tr>
+                    <td data-translate="profielpagina.achternaam">Achternaam</td>
+                    <td>:</td>
+                    <td id="achternaam" ></td>
+                </tr>
+                <tr>
+                    <td data-translate="profielpagina.leeftijd">Leefijd</td>
+                    <td>:</td>
+                    <td id="leeftijd"></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</article>
+</body>
+</html>

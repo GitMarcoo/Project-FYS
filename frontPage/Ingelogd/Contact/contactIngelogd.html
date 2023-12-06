@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="../../../assets/CSS/contactIngelogdGebruiker.css" rel="stylesheet">
+    <link href="../../../assets/CSS/header.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="../../../assets/js/configHakan.js"></script>
+    <script src="../../../assets/js/taal.js"></script>
+    <script src="../../../assets/js/contactIngelogd.js"></script>
+    <script src="../../../assets/js/header.js"></script>
+
+
+</head>
+
+<body>
+
+<section class="header">
+    <nav>
+        <a href="../../../index.html"> <img class="corendonLogo" src="../../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <ul>
+                <li> <i class="fas fa-home"></i> <a href="../frontpageIngelogdGebruiker.html" data-translate="header.home">  Home </a> </li>
+                <li> <i class="fa fa-fw fa-envelope"></i> <a href="contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+                <li> <i class="far fa-clone"></i> <a href="../Gebruiker/pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+                <li> <i class="fas fa-user-edit"></i> <a href="../Profiel/profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+
+
+                <!--      <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>-->
+                <!--      <li> <i class="fa fa-fw fa-envelope"></i> <a href="contact.html" data-translate="header.contact">  Contact</a> </li>-->
+                <!--      <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>-->
+                <!--      <li> <i class="fas fa-language"></i> <a href=""> </a> </li>-->
+                <li> </li>
+                <li class="headerTaal">
+                    <i class="fas fa-language"></i>
+                    <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                    <option value="nl">Nederlands</option>
+                    <option value="en">English</option>
+                    <option value="es">Espanol</option>
+                </select>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+    </nav>
+
+    <div id="popupJa" class="bevestingJa">
+        <h1 class="popupText" data-translate="contact.verzonden"> Uw bericht is verzonden </h1>
+    </div>
+
+    <div id="popupNee" class="bevestingNee">
+        <h1 class="popupText" data-translate="contact.nietVerzonden"> Uw bericht is niet verzonden </h1>
+    </div>
+
+    <div id="popup2" class="bevesting2">
+        <h1 class="popupText2" data-translate="contact.bevestiging"> Bericht verzenden? </h1>
+        <button onclick= verzendBericht() id="bevestigingJa" class="btn1" data-translate="contact.bevestigingJa">Ja</button>
+        <button onclick= verzendBerichtNiet() id="bevestigingNee" class="btn2" data-translate="contact.bevestigingNee">Nee</button>
+
+    </div>
+
+    <div class="wrapper" id="test">
+        <div class="contact-us">
+            <div class="title" data-translate="contact.titel"> Contact</div>
+            <div class="contactBeshcrijving" data-translate="contact.beschrijving"> Voor alle vragen en meldingen bent u hier op de juist plek. Vul het formulier hieronder in.</div>
+
+            <div class="input-fields">
+
+                <div class="items">
+                    <label for="subject" class="label" data-translate="contact.onderwerp">Onderwerp</label>
+                    <input id="subject" type="text" class="input" required placeholder="Waar gaat uw bericht over?">
+                </div>
+                <div class="items">
+                    <label for="msg" class="label" data-translate="contact.bericht">Bericht</label>
+                    <textarea id="msg" class="text-area" required placeholder="Typ hier uw bericht"></textarea>
+                </div>
+            </div>
+            <button onclick= verzendBevestiging() id="verzend" class="btn" data-translate="contact.verzend">Verzend</button></div>
+
+    </div>
+
+</section>
+</body>
+</html>

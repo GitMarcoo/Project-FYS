@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+
+select{
+    background: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select:hover{
+    border: none;
+    color: white;
+    background: #ffffff;
+}
+
+/*Navigatiebalk */
+nav{
+    display: flex;
+    padding:  10px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(229, 64, 64);
+    /*background: #eb1c24;*/
+}
+
+/* Corendon Logo linksbovenin*/
+nav img{
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+.fas{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.fa{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.far{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover{
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid{
+    display: none;
+}
+
+nav .fa-solid:hover{
+    border-radius: 10px;
+    background-color: #ef5350;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal{
+    margin-left: -25px;
+}
+

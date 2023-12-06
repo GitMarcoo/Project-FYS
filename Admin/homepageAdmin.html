@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../assets/CSS/css.file.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+  <script src="../assets/js/configMarco.js"></script>
+  <script src="../assets/js/adminpage.js"></script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <span class="logo_name">Corendon</span>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="#" id="navGebruiker">
+        <i class='bx '></i>
+        <span class="links_name">Gebruikers</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" id="navPosts">
+        <i class='bx'></i>
+        <span class="links_name">Posts</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" id="navMelding">
+        <i class='bx'></i>
+        <span class="links_name">Meldingen</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" id="medewerker">
+        <i class='bx'></i>
+        <span class="links_name">Medewerkers</span>
+      </a>
+    </li>
+    <li class="log_out">
+      <a href="../frontPage/inlogpagina.html">
+        <i class='bx bx-log-out'></i>
+        <span class="links_name">Uitloggen</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<section class="home-section">
+  <nav>
+    <div class="sidebar-button">
+      <span class="dashboard" id="navNaam">Dashboard</span>
+    </div>
+
+    <div class="profile-details centertext">
+      <h1 class="centertext" id="ingelogdNaam">Jan Willem</h1>
+    </div>
+  </nav>
+
+  <div class="Zoekbalk hidden" id="zoekBalk">
+    <input name="Zoekbalk" type="text" placeholder="Type hier wat u wilt zoeken..." id="zoekBalkInput">
+    <button class="Zoekknop" type="img" >
+      <img src="../assets/img/search_icon.png" alt="SearchIcon">
+    </button>
+  </div>
+  <div class="zoekVenster hidden " id="zoekVenster">
+    <div>
+      <ul class="zoekVensterTextVak">
+        <li class="" id="result1"><a id="searchResult1"></a></li>
+        <li class="" id="result2"><a id="searchResult2"></a></li>
+        <li class="" id="result3"><a id="searchResult3"></a></li>
+        <li class="" id="result4"><a id="searchResult4"></a></li>
+      </ul>
+    </div>
+  </div>
+  <section class="flexColumn centeritems" id="laadScherm">
+    <article class="flexColumn postCategorie hidden" id="gebruikerShow">
+        <h1 class="centeritems margintop0" id="gebruikerNaam"> Kaas bAAS</h1>
+        <p class="centeritems margintop0" id="gebruikerStatus"> status: actief</p>
+      <div class="flexRow editDeleteSection ">
+        <button type="button" id="blokkeer"> blokkeer</button>
+        <button type="button" id="deblokkeer"> deblokkeer</button>
+      </div>
+    </article>
+
+    <article class="Register-box hidden" id="registerMedewerker">
+      <h2>Nieuwe Medewerker</h2>
+      <form name="forms">
+
+        <section class="user-box">
+          <input type="text" placeholder="naam" id="naam" required>
+        </section>
+
+        <section class="user-box">
+          <input type="text" placeholder="achternaam" id="achternaam" required>
+        </section>
+
+        <section class="user-box">
+          <input type="email" placeholder="email"  id="email" name="text" required>
+        </section>
+
+        <section class="user-box">
+          <input type="password" placeholder="Password"  id="wachtwoord" required>
+        </section>
+
+        <section class="user-box">
+          <input type="password" placeholder="Repeat Password"  id="herhaal-wachtwoord" required>
+        </section>
+
+        <article class="Button-form">
+          <a id="register" class="Register" href="#">Register</a>
+        </article>
+      </form>
+
+    </article>
+  <section id="meldingen" class="">
+  </section>
+  </section>
+
+</section>
+
+
+</main>
+
+
+</body>
+</html>

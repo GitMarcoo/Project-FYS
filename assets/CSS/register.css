@@ -1,0 +1,271 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    text-decoration: none;
+    background: #F9F4F6;
+    font-family: Satoshi-Regular;
+    margin: 0%;
+}
+
+.Register-box{
+    position: absolute;
+    border-radius: 10px;
+    top:55%;
+    left: 50%;
+    width: 35%;
+    min-width: 360px;
+    padding: 3%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow:  5px 5px 4px #FC6266;
+}
+
+.Register-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000 ;
+    text-align: center;
+}
+
+.Register-box  .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.Button-form{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Register {
+    padding: 5px 5px 5px 5px;
+    color: #FC6266;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #FC6266;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.Register:hover{
+    background: #FC6266;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FC6266, 0 0 25px #FC6266, 0 0 50px #FC6266, 0 0 100px #FC6266;
+}
+.Register-box{
+    color: #FC6266;
+    text-decoration: none;
+    color: #FC6266;
+    width: 35%;
+    min-width: 360px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.Register a{
+    color: #000000;
+    margin: auto;
+    text-decoration: none;
+}
+
+/*Header + nav*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+select {
+    background: rgb(229, 64, 64);;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select:hover {
+    border: none;
+    color: white;
+    background: #E54040FF;
+}
+
+/*Navigatiebalk */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(229, 64, 64);
+    /*background: #eb1c24;*/
+}
+
+/* Corendon Logo linksbovenin*/
+nav img {
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+.fas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fa {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.far {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover {
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid {
+    display: none;
+}
+
+nav .fa-solid:hover {
+    border-radius: 10px;
+    background-color: #ef5350;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links {
+        color: rgb(229, 64, 64);;
+        position: absolute;
+        background-color: rgb(229, 64, 64);
+        height: 300px;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal {
+    margin-left: -25px;
+}
+
+.displaynone{
+    display: none;
+}
+
+@media (min-width: 701px) {
+    .nav-links{
+        display: block; !important;
+    }
+}
+
+@media (max-width:720px) {
+    .Register-box{
+        min-width: 300px;
+    }
+}

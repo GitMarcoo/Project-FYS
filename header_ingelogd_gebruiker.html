@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assets/CSS/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+  <script src="Assets/js/configMain.js"></script>
+  <script src="Assets/js/header.js"></script>
+  <script src="Assets/js/taal.js"></script>
+</head>
+<body>
+<header id="test" class="header">
+  <nav>
+  <a href="index.html"> <img class="corendonLogo" src="Assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+  <div class="nav-links" id="navLinks">
+    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+    <ul>
+      <li> <i class="fas fa-home"></i> <a href="" data-translate="header.home">  Home </a> </li>
+      <li> <i class="fa fa-fw fa-envelope"></i> <a href="" data-translate="header.contact">  Contact</a> </li>
+      <li> <i class="far fa-clone"></i> <a href="" data-translate="header.mijnPosts">  Posts</a> </li>
+      <li> <i class="fas fa-user-edit"></i> <a href="" data-translate="header.profiel">  Profiel</a> </li>
+
+
+<!--      <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>-->
+<!--      <li> <i class="fa fa-fw fa-envelope"></i> <a href="contact.html" data-translate="header.contact">  Contact</a> </li>-->
+<!--      <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>-->
+<!--      <li> <i class="fas fa-language"></i> <a href=""> </a> </li>-->
+      <li> </li>
+      <li class="headerTaal">
+        <i class="fas fa-language"></i>
+        <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+        <option value="nl">Nederlands</option>
+        <option value="en">English</option>
+        <option value="es">Espanol</option>
+      </select>
+      </li>
+    </ul>
+  </div>
+  <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+  </nav>
+
+</header>
+</body>
+</html>

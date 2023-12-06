@@ -1,0 +1,377 @@
+body {
+    padding-bottom: 200px;
+    font-family: Satoshi-Regular;
+    background-color: #F9F4F6;
+}
+
+/* Navigation */
+select{
+    background: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select option   {
+    color: #e54040;
+}
+
+select:hover{
+    border: none;
+    /*color: #ffffff;*/
+}
+
+
+/* Eerste blok met berg als achtegrond*/
+.header{
+    width: 100%;
+    /*background-image: linear-gradient(rgba(0,0,0,0),rgba(30,9,40,0.7)),url(https://wallpaperaccess.com/full/825191.jpg);*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+}
+
+/*Navigatiebalk */
+nav{
+    display: flex;
+    padding:  10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #e54040;
+    border-radius: 0px;
+}
+
+/* Corendon Logo linksbovenin*/
+nav img{
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover{
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid{
+    display: none;
+}
+
+nav .fa-solid:hover{
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links{
+        position: absolute;
+    //background-color: #e54040;
+        height: 100vh;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerZoekbalk{
+    width: 30%;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.headerZoekbalk input{
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.zoekbalkButton{
+    margin-left: -5px;
+    height: 40px;
+    width: 7%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.zoekbalkButton:hover{
+    transition: 2s;
+
+}
+
+
+
+.headerTaal{
+    margin-left: -25px;
+}
+/* General and body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+}
+
+.postOpen {
+    position: relative;
+    margin: 5% auto auto;
+    width: 600px;
+    height: 850px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+}
+.postTitel {
+    text-align: center;
+
+}
+.postBeschrijving {
+    text-align: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 12px;
+}
+.postIMG {
+text-align: center;
+
+
+}
+.postLocatie{
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+
+.postDatum {
+    text-align: right;
+    margin-right: 35px;
+}
+.postBericht {
+    margin-left: 7%;
+}
+#Bericht {
+    height: 82px;
+    width: 505px;
+    border: 1px solid #000;
+}
+.postVersturen {
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+.postVersturen:hover {
+    box-shadow: 1px 1px 10px 1px lightslategray;
+    cursor: pointer;
+}
+.return input {
+    position: absolute;
+    left: 93%;
+    top: 0;
+    width: 40px;
+    height: 38px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    height: 100px;
+    width: 250px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+}
+#okKnop {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+}
+#okKnop:hover {
+    box-shadow: 1px 1px 10px 1px lightslategray;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+    url('../fonts/Satoshi-Light.woff') format('woff'),
+    url('../fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('../fonts/Satoshi-Italic.woff') format('woff'),
+    url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+    url('../fonts/Satoshi-Black.woff') format('woff'),
+    url('../fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}

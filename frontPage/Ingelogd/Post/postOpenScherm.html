@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+<!--    <link href="assets/CSS/postOpenSchermLayout.css" rel="stylesheet">-->
+    <link href="../../../assets/CSS/header.css" rel="stylesheet">
+    <link href="../../../assets/CSS/postOpenSchermCSS2.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="../../../assets/js/configMain.js"></script>
+    <script src="../../../assets/js/postOpenScherm.js"></script>
+    <script src="../../../assets/js/taal.js"></script>
+    <script src="../../../assets/js/header.js"></script>
+
+</head>
+<body>
+<header id="test" class="header">
+    <nav>
+        <a href="../../../index.html"> <img class="corendonLogo" src="../../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+        <div class="displaynone nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <ul>
+                <li> <i class="fas fa-home"></i> <a href="../frontpageIngelogdGebruiker.html" data-translate="header.home">  Home </a> </li>
+                <li> <i class="fa fa-fw fa-envelope"></i> <a href="../Contact/contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+                <li> <i class="far fa-clone"></i> <a href="../Gebruiker/pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+                <li> <i class="fas fa-user-edit"></i> <a href="../Profiel/profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+
+
+                <!--      <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>-->
+                <!--      <li> <i class="fa fa-fw fa-envelope"></i> <a href="contact.html" data-translate="header.contact">  Contact</a> </li>-->
+                <!--      <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>-->
+                <!--      <li> <i class="fas fa-language"></i> <a href=""> </a> </li>-->
+                <li> </li>
+                <li class="headerTaal">
+                    <i class="fas fa-language"></i>
+                    <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                    <option value="nl">Nederlands</option>
+                    <option value="en">English</option>
+                    <option value="es">Espanol</option>
+                </select>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+    </nav>
+
+</header>
+<main>
+    <article>
+        <figure class="PostImage">
+            <img id="postIMG" src="../../../assets/img/CafeIMG.jpg" alt="PostImage"
+                 width="2000" height="1330" loading="lazy">
+        </figure>
+        <div class="Posttext">
+            <div class="locatie">
+                <div>
+                    <p id="postEigenaar" >Jan Klaas</p>
+                </div>
+                <div>
+                    <img src="../../../assets/img/locatieIcon.png" alt="locatieIcon">
+                    <p id="locatie" >Alkmaar, Nederland</p>
+                </div>
+            </div>
+            <input type="button" value="Boek een vakantie!" id="boek" class="boek">
+            <h1 class="PostActiviteit" id="titel">Strand bezoek</h1>
+            <p class="postPeriode" id="datum">22-9-2022 tot 23-9-2022</p>
+            <div class="Bijschrift">
+                <h1 data-translate="postopen.bijschrift">Bijschrift:</h1>
+                <p id="beschrijving"> Koffie drinken bij een ambachtelijk cafe.</p>
+            </div>
+
+            <div class="bericht">
+                <h1 data-translate="postopen.bericht">Geintereseerd? Stuur een bericht!</h1>
+                <textarea placeholder="Type hier uw bericht..." id="Bericht" name="Bericht" rows="4" cols="50"></textarea>
+                <input type="button" value="Verstuur" id="versturen" class="versturen disableButton">
+            </div>
+        </div>
+        <button type="img" class="moveButton" id="terug">
+            <img src="../../../assets/img/arrowMarcoleft.png">
+        </button>
+        <button type="img" class="flagButton" id="raporteer">
+            <p data-translate="postopen.rapporteer">Ongewenst gedrag of post. Geef het door!</p>
+            <img src="../../../assets/img/flag.png">
+        </button>
+    </article>
+
+</main>
+</body>
+</html>

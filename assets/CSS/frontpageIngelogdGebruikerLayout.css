@@ -1,0 +1,782 @@
+/* General and body */
+    body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 600px;
+        width: auto;
+    }
+
+/* Navigation */
+
+select{
+    background: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select option   {
+    color: #e54040;
+}
+
+select:hover{
+    border: none;
+    /*color: #ffffff;*/
+}
+
+
+/* Eerste blok met berg als achtegrond*/
+.header{
+    width: 100%;
+    /*background-image: linear-gradient(rgba(0,0,0,0),rgba(30,9,40,0.7)),url(https://wallpaperaccess.com/full/825191.jpg);*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+}
+
+/*Navigatiebalk */
+nav{
+    display: flex;
+    padding:  10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #e54040;
+    border-radius: 0px;
+}
+
+/* Corendon Logo linksbovenin*/
+nav img{
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover{
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid{
+    display: none;
+}
+
+nav .fa-solid:hover{
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links{
+        position: absolute;
+        background-color: #e54040;
+        height: 100vh;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal{
+    margin-left: -25px;
+}
+
+
+/* Section */
+    .laatstBekekenHeader {
+        display: flex;
+        flex-direction: column;
+        margin-top: 102px;
+        margin-left: 11.45%;
+        margin-right: 11.45%;
+        max-width: 1480px;
+    }
+
+
+    .laatstBekeken {
+        padding-top: 47px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 11%;
+        overflow: clip;
+
+    }
+
+    .laatstBekekenHeader hr {
+        background-color: #FC6266;
+        width: 365px;
+        height: 3px;
+        border: none;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        /*margin-bottom: 47px;*/
+    }
+
+    .laatstBekekenHeader header {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .laatstBekekenHeader header div {
+        width: fit-content;
+    }
+
+
+
+    .moveButton{
+        width: 65.58px;
+        height: 44px;
+        background-color: #EDB5B7;
+        margin: 7.5px;
+        border-radius: 15px;
+        border: none;
+        padding: 0;
+    }
+
+    .moveButton img {
+        max-height: 100%
+    }
+
+
+    .moveButtonRight{
+        width: 65.58px;
+        height: 44px;
+        background-color: #EDB5B7;
+        margin: 7.5px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .catagorienHeader {
+        display: grid;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 137px;
+        max-width: 1480px;
+        justify-content: center;
+    }
+    .catagorienHeader hr {
+        background-color: #FC6266;
+        width: 250px;
+        height: 3px;
+        border: none;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-bottom: 47px;
+    }
+
+    .catagorienHeader h1{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .catagorienHeader .catagorieList {
+        display: flex;
+        flex-direction: row;
+        row-gap: 20px;
+        column-gap: 40px;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        max-width: 802px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .catagorienHeader .catagorieList li {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /*onderste voor kolom beweging tegen te gaan mobiel tijdens switchen*/
+        height: 45px;
+        width: 140px;
+    }
+
+    .catagorienHeader .catagorieList li .catogorieButton{
+        font-weight: 400;
+        font-size: 32px;
+        color: #4A4A4A;
+        background-color: transparent;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+    .catagorienHeader .catagorieList li button:hover{
+        cursor: pointer;
+    }
+
+    .catogorieButtonActive {
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+        background-color: #FC6266;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+    }
+
+
+
+    .catagorienHeader .Zoekbalk {
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 32px;
+        width: 499px;
+
+    }
+
+    .Zoekbalk input:focus{
+        outline: none;
+
+    }
+
+    .Zoekknop:hover{
+        cursor: pointer;
+    }
+
+    .catagorienHeader .Zoekbalk input {
+        width: inherit;
+        height: 36px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        border: none;
+
+    }
+
+    .catagorienHeader .Zoekbalk button {
+        width: 55px;
+        height: 38px;
+        position: relative;
+        left: -10px;
+        background: #FC6266;
+        border-radius: 0px 5px 5px 0px;
+        border: none;
+    }
+
+    .catagorienHeader .Zoekbalk button img{
+        height: 38px;
+        width: auto;
+    }
+
+    .zoekVenster {
+        z-index: 1;
+        position: absolute;
+        text-align: left;
+        width: 428px;
+        height: 100px;
+        background: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 0px 0px 10px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        left: -60px;
+        top: 447px;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-bottom: 5px;
+    }
+
+    .toggleBoxShadow {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .zoekVensterTextVak{
+        border-top: 0.5px grey solid;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        max-height: 200px;
+        list-style: none;
+        margin: 0;
+        padding-left: 5px;
+    }
+    .zoekVensterTextVak li {
+        padding-top: 3px;
+        cursor: pointer;
+    }
+
+    .zoekVensterTextVak li:hover{
+        background: grey;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    .filters {
+        top: 0px;
+        left: 0;
+        right: 0;
+        color: black;
+        font-size: 12px;
+    }
+    .filters div ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        justify-content: left;
+        padding-left: 0;
+        padding-top: 20px;
+        height: 30px;
+    }
+
+    .filters div li {
+        border-radius: 10px;
+        background: #F5DBDA;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: white;
+        padding-top: 4px;
+        font-size: 15px;
+    }
+
+    .filters div ul li input{
+        max-width: 12px;
+        max-height: 12px;
+        margin: auto;
+        padding-left: 5px;
+        padding-top: 3px;
+    }
+
+
+/*Article*/
+
+
+    .postLaatstBekeken {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
+        margin: 0;
+        margin-right: 41px;
+        overflow: clip;
+    }
+
+    .postLaatstBekeken .Posttext .locatie {
+        display: flex;
+        flex-direction: row;
+        height: 15px;
+        justify-content: right;
+        padding-right: 6px;
+        padding-top: 5px;
+        padding-bottom: 16px;
+    }
+
+    .locatie p{
+        margin: 0;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .postEigenaar {
+        position: absolute;
+        margin-left: 43%;
+        margin-bottom: 20%;
+        margin-top: 0;
+        z-index: 1;
+    }
+
+
+
+
+
+    .Taal ul {
+        list-style: none;
+        position: absolute;
+        z-index: -1;
+        right: 30px;
+        padding-left: 0;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .Taal ul li {
+        padding-bottom: 10px;
+        border-top: 1px grey solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+
+    }
+
+    .Taal ul {
+        background-color: #e91c25;
+    }
+
+    .laatstBekeken .PostImage {
+        border-radius: 10px 10px 0px 0px;
+        height: 175px;
+        width: 260px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .laatstBekeken .PostImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .catogoriePosts {
+        display:grid;
+        margin: auto;
+        overflow: clip;
+        grid-gap: 10px;
+        grid-column-gap: 30px;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        max-width: 77%;
+    }
+
+    .postCategorie {
+        width: 472px;
+        min-width: 250px;
+        height: 144px;
+        background-color: white;
+        border-radius: 10px;
+        animation-name: articleMoveback;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        margin-top: 10px;
+    }
+
+    .postCategorie article {
+        display: flex;
+        flex-direction: row;
+        width: inherit;
+        height: inherit;
+    }
+
+
+
+    .postCategorie .Posttext {
+        display: flex;
+        flex-direction: column;
+    }
+    .postCategocaterie article {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .postCategorie .PostImage {
+        border-radius: 10px 0px 0px 10px;
+        height: 144px;
+        width: 164px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+
+    .postCategorie .PostImage img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .postCategorie .Posttext .locatie {
+        display: flex;
+        flex-direction: row;
+        height: 15px;
+        justify-content: right;
+        padding-right: 4.2%;
+        padding-top: 4px;
+    }
+
+    .postCategorie .Posttext .locatie img{
+        width: 15px;
+    }
+
+    .postCategorie .Posttext {
+        padding-left: 1.7%;
+        padding-right: 2.75%;
+        padding-top: 0.4%;
+        margin: 0;
+        width: 65.25%;
+    }
+
+    .displaynone {
+        display: none;
+    }
+
+
+@media (min-width: 701px) {
+    .nav-links{
+        display: block; !important;
+    }
+}
+@media (max-width: 700px){
+    .nav-links {
+        position: absolute;
+        background-color: rgb(229, 64, 64);
+        height: 300px;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+
+@media (min-width: 360px)and (max-width:1274px) {
+    .catogoriePosts {
+        grid-template-columns: repeat(1,1fr);
+        width: 500px;
+    }
+
+    .catogoriePosts article {
+        margin-right: 0;
+    }
+
+    body header {
+    }
+
+
+
+    .zoekVensterTextVak {
+    }
+
+}
+
+@media (max-width:1000px) {
+
+     .catagorienHeader .catagorieList {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .laatstBekeken {
+        overflow: scroll;
+        overflow-x: visible;
+    }
+    .laatstBekeken::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .laatstBekekenHeader header div {
+        display: none;
+    }
+
+    .laatstBekekenHeader hr{
+        width: 280px;
+    }
+
+    .laatstBekekenHeader header h1{
+        font-size: 40px;
+    }
+
+
+}
+
+@media (min-width: 862px) and (max-width:1000px) {
+    .zoekVenster{
+        top: 514px;
+    }
+}
+
+    @media (min-width:1000px) {
+    .postCategorie:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        /*animation-name: articleMove;*/
+        /*animation-duration: 1s;*/
+        /*animation-fill-mode: forwards;*/
+    }
+    .postLaatstBekeken:hover  {
+        animation-name: articleMove;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+
+
+@media (max-width:600px) {
+    .catagorienHeader .Zoekbalk {
+        width: 380px;
+    }
+    .catagorienHeader .catagorieList{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .catogoriePosts {
+        max-width: 90%;
+    }
+
+    .zoekVenster {
+        top: 574px;
+        width: 310px;
+        left: -60px;
+    }
+
+    .filters {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .filters div ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 5px;
+        height: auto;
+    }
+
+
+}
+@media (max-width:500px) {
+    .catagorienHeader .Zoekbalk {
+        width: 290px;
+    }
+
+    .postCategorie {
+        width: 100%;
+    }
+
+    .zoekVenster {
+        top: 574px;
+        width: 220px;
+        left: -60px;
+    }
+
+
+}
+
+
+@media (min-width:1275px)and (max-width: 1900px) {
+    .catogoriePosts {
+        grid-template-columns: repeat(2,1fr);
+        width: 1000px;
+    }
+
+}
+
+@media (min-width:1901px) {
+    .catogoriePosts {
+        grid-template-columns: repeat(3,1fr);
+        width: 1500px;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1274px) {
+
+    .zoekVenster {
+        top: 444px;
+        left: -60px;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 861px) {
+
+    .zoekVenster {
+        top: 537px;
+    }
+
+}
+
+@media  (min-width: 600px) and (max-width:  700px){
+    .zoekVenster {
+        top: 514px;
+    }
+}
+
+
+
+
+
+
+
+

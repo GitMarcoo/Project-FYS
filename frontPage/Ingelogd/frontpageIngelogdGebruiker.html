@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor en Don</title>
+    <link href="../../assets/CSS/header.css" rel="stylesheet">
+    <link href="../../assets/CSS/frontpageIngelogdGebruikerMain.css" rel="stylesheet">
+    <link href="../../assets/CSS/frontpageIngelogdGebruikerLayout.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="../../assets/js/configMarco.js"></script>
+    <script src="../../assets/js/frontpageIngelogdGebruikerLayout.js"></script>
+    <script src="../../assets/js/taal.js"> </script>
+    <script src="../../assets/js/header.js"></script>
+
+
+
+</head>
+<body>
+<header id="test" class="header">
+    <nav>
+        <a href="../../index.html"> <img class="corendonLogo" src="../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+        <div class="displaynone nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <ul>
+                <li> <i class="fas fa-home"></i> <a href="" data-translate="header.home">  Home </a> </li>
+                <li> <i class="fa fa-fw fa-envelope"></i> <a href="Contact/contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+                <li> <i class="far fa-clone"></i> <a href="Gebruiker/pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+                <li> <i class="fas fa-user-edit"></i> <a href="Profiel/profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+
+
+                <!--      <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>-->
+                <!--      <li> <i class="fa fa-fw fa-envelope"></i> <a href="contact.html" data-translate="header.contact">  Contact</a> </li>-->
+                <!--      <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>-->
+                <!--      <li> <i class="fas fa-language"></i> <a href=""> </a> </li>-->
+                <li> </li>
+                <li class="headerTaal">
+                    <i class="fas fa-language"></i>
+                    <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                    <option value="nl">Nederlands</option>
+                    <option value="en">English</option>
+                    <option value="es">Espanol</option>
+                </select>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+    </nav>
+
+</header>
+    <main>
+        <section class="catagorienHeader" id="isthisit">
+            <h1 class="sectoinTitel" data-translate="frontpage.categorieen">Voor jou</h1>
+            <hr>
+            <ul class="catagorieList">
+                <li><button class="catogorieButtonActive" id="recentButton" data-translate="frontpage.recent">Recent</button></li>
+                <li><button class="catogorieButton" id="sportiefButton" data-translate="frontpage.sportief" >Sportief</button></li>
+                <li><button class="catogorieButton" id="relaxedButton" data-translate="frontpage.relaxed">Relaxed</button></li>
+                <li><button class="catogorieButton" id="stadButton" data-translate="frontpage.stad"> Stad </button></li>
+                <li><button class="catogorieButton" id="natuurButton" data-translate="frontpage.natuur">Natuur</button></li>
+            </ul>
+            <div class="Zoekbalk">
+                <input name="Zoekbalk" type="text" placeholder="Type hier wat u wilt zoeken..." id="zoekBalkInput">
+                <button class="Zoekknop" type="img" >
+                    <img src="../../assets/img/search_icon.png" alt="SearchIcon">
+                </button>
+            </div>
+            <div class="zoekVenster hidden" id="zoekVenster">
+                <div>
+                    <ul class="zoekVensterTextVak">
+                        <li class="" id="result1"><a id="searchResult1">Spaans</a></li>
+                        <li class="" id="result2"><a id="searchResult2">Kitesurfen</a></li>
+                        <li class="" id="result3"><a id="searchResult3">woensdag</a></li>
+                        <li class="" id="result4"><a id="searchResult4">heerhugowaard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filters">
+                <div>
+                    <ul>
+                        <li id="filter1" class="hidden pointer">
+                            <message id="filter1Text">filter1</message>
+                            <input type="image" alt="delete" src="../../assets/img/kruusie.png" id="removeFilter1" >
+                        </li>
+                        <li id="filter2" class="hidden pointer">
+                            <message id="filter2Text">filter2</message>
+                            <input type="image" alt="delete" src="../../assets/img/kruusie.png" id="removeFilter2" >
+                        </li>
+                        <li id="filter3" class="hidden pointer">
+                            <message id="filter3Text">filter3</message>
+                            <input type="image" alt="delete" src="../../assets/img/kruusie.png" id="removeFilter3" >
+                        </li>
+                        <li id="filter4" class="hidden pointer">
+                            <message id="filter4Text">filter4</message>
+                            <input type="image" alt="delete" src="../../assets/img/kruusie.png" id="removeFilter4" ></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="catogoriePosts" id="catogoriePosts">
+<!--            <a href="postOpenScherm.html" class="postCategorie">-->
+<!--                <article>-->
+<!--                    <figure class="PostImage">-->
+<!--                        <img src="assets/img/CafeIMG.jpg" alt="PostImage"-->
+<!--                             width="2000" height="1330" loading="lazy">-->
+<!--                    </figure>-->
+<!--                    <div class="Posttext">-->
+<!--                        <h1 class="PostActiviteit">Cafe bezoek</h1>-->
+<!--                        <p class="postPeriode">22-9-2022 tot 23-9-2022</p>-->
+<!--                        <div class="Bijschrift">-->
+<!--                            <h1>Bijschrift:</h1>-->
+<!--                            <p> Koffie drinken bij een ambachtelijk cafe.</p>-->
+<!--                        </div>-->
+<!--                        <div class="locatie">-->
+<!--                            <img src="assets/img/locatieIcon.png" alt="locatieIcon">-->
+<!--                            <p>Alkmaar, Nederland</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </article>-->
+<!--            </a>-->
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <link rel="stylesheet" href="../assets/CSS/register.css">
+    <script src="../assets/js/configMain.js"></script>
+    <script src="../assets/js/register.js"></script>
+    <script src="../assets/js/taal.js"></script>
+</head>
+<body>
+<header id="test" class="header"> <nav>
+    <a href="../index.html"> <img class="corendonLogo" src="../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+    <div class=" displaynone nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()" id="menu"></i>
+        <ul>
+            <li> <i class="fas fa-home"></i> <a href="../index.html" data-translate="header.home">  Home </a> </li>
+            <li> <i class="fa fa-fw fa-envelope"></i> <a href="Contact/contact.html" data-translate="header.contact">  Contact</a> </li>
+            <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>
+            <li> </li>
+            <li class="headerTaal">
+                <i class="fas fa-language"></i>
+                <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Espanol</option>
+            </select>
+            </li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+</nav>
+
+</header>
+<article class="Register-box">
+    <h2>Register</h2>
+    <form name="forms">
+
+        <section class="user-box">
+            <input type="text" placeholder="naam" id="naam" required>
+        </section>
+
+        <section class="user-box">
+            <input type="text" placeholder="achternaam" id="achternaam" required>
+        </section>
+
+        <section class="user-box">
+            <input type="email" placeholder="email"  id="email" name="text" required>
+        </section>
+
+        <section class="user-box">
+            <input type="password" placeholder="Password"  id="wachtwoord" required>
+        </section>
+
+        <section class="user-box">
+            <input type="password" placeholder="Repeat Password"  id="herhaal-wachtwoord" required>
+        </section>
+
+        <article class="Button-form">
+            <a id="register" class="Register" href="#">Register</a>
+        </article>
+    </form>
+
+</article>
+
+</body>
+</html>

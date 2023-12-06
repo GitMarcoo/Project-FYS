@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Posts</title>
+    <link href="../../../assets/CSS/header.css" rel="stylesheet">
+    <link href="../../../assets/CSS/pageMijnPostsMain.css" rel="stylesheet">
+
+    <link href="../../../assets/CSS/pageMijnPostsLayout.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="../../../assets/js/configMarco.js"></script>
+    <script src="../../../assets/js/pagemijnpost.js"></script>
+    <script src="../../../assets/js/taal.js"> </script>
+    <script src="../../../assets/js/header.js"></script>
+
+</head>
+<body>
+<header id="test" class="header">
+    <nav>
+        <a href="../../../index.html"> <img class="corendonLogo" src="../../../assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+        <div class="displaynone nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <ul>
+                <li> <i class="fas fa-home"></i> <a href="../frontpageIngelogdGebruiker.html" data-translate="header.home">  Home </a> </li>
+                <li> <i class="fa fa-fw fa-envelope"></i> <a href="../Contact/contactIngelogd.html" data-translate="header.contact">  Contact</a> </li>
+                <li> <i class="far fa-clone"></i> <a href="pageMijnPosts.html" data-translate="header.mijnPosts">  Posts</a> </li>
+                <li> <i class="fas fa-user-edit"></i> <a href="../Profiel/profielpagina.html" data-translate="header.profiel">  Profiel</a> </li>
+
+
+                <!--      <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>-->
+                <!--      <li> <i class="fa fa-fw fa-envelope"></i> <a href="contact.html" data-translate="header.contact">  Contact</a> </li>-->
+                <!--      <li> <i class="fas fa-user-circle"></i> <a href="inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>-->
+                <!--      <li> <i class="fas fa-language"></i> <a href=""> </a> </li>-->
+                <li> </li>
+                <li class="headerTaal">
+                    <i class="fas fa-language"></i>
+                    <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                    <option value="nl">Nederlands</option>
+                    <option value="en">English</option>
+                    <option value="es">Espanol</option>
+                </select>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+    </nav>
+
+</header>
+    <main>
+        <!--Hier plaatsen we verschillende posts -->
+        <section class="PostList" id="postList">
+            <header>
+                <h1 data-translate="mijnposts.titel">Mijn Posts</h1>
+                <figure class="FilterIMG">
+                    <input title="Maak aan" id="addPostButton" type="image" src="../../../assets/img/plusIcon.png" alt="add" width="346" height="346">
+                </figure>
+            </header>
+
+        </section>
+        <section class="postScherm hidden" id="postScherm">
+            <article class="postEditachtergrond">
+                <form autocomplete="off">
+                    <div class="flexColumn postEditHeader">
+                        <figure class="postEditIMG">
+                            <input id="editIMG" class="disabled" type="image" src="../../../assets/img/CafeIMG.jpg" alt="postfoto">
+                        </figure>
+                        <div class="flexRow">
+                            <label for="postTitel" data-translate="mijnposts.activiteit">Activiteit:</label>
+                            <input class="roundEdges postEditTextStyle"  type="text" id="postTitel" name="postTitel">
+
+                            <div class="zoekVensterActiviteit hidden" id="zoekVenster">
+                                <div>
+                                    <ul class="zoekVensterTextVak">
+                                        <li class="hidden" id="result1"><a id="searchResult1">Spaans</a></li>
+                                        <li class="hidden" id="result2"><a id="searchResult2">Kitesurfen</a></li>
+                                        <li class="hidden" id="result3"><a id="searchResult3">woensdag</a></li>
+                                        <li class="hidden" id="result4"><a id="searchResult4">heerhugowaard</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexColumn postEditFooter">
+                        <div class="flexRow plaatsInvul">
+                            <div class="flexColumn">
+                                <label for="postLocatieStad" data-translate="mijnposts.stad">Stad:</label>
+                                <input class="roundEdges postEditTextStyle" type="text" id="postLocatieStad" name="postLocatieStad">
+                            </div>
+                            <div class="flexColumn">
+                                <label for="postLocatieLand" data-translate="mijnposts.land">Land:</label>
+                                <input class="roundEdges disabled"  type="text" id="postLocatieLand" name="postLocatieLand">
+                            </div>
+                        </div>
+                        <label for="postBijschrift" data-translate="mijnposts.bijschrift">Bijschrift:</label>
+                        <textarea class="roundEdges" placeholder="Type hier uw bijschrift..." id="postBijschrift" name="postBijschrift"
+                                  rows="4" cols="50" >
+                        </textarea>
+                        <div class="flexRow periodeKeuze">
+                            <div class="flexColumn">
+                                <label for="periodeVan" data-translate="mijnposts.periodeVan">Periode van:</label>
+                                <input class="roundEdges" type="date" name="periodeVan" id="periodeVan">
+                            </div>
+                            <div class="flexColumn">
+                                <label for="periodeTot" data-translate="mijnposts.periodeTot">Periode tot:</label>
+                                <input class="roundEdges" type="date" name="periodeTot" id="periodeTot">
+                            </div>
+                        </div>
+                        <div class="flexRow postEditKnoppen">
+                            <input type="button" value="Maak aan" id="buttonMaakAan" class="hidden">
+                            <input type="button" value="Wijzig" id="buttonWijzig" class="hidden">
+                            <input type="button" value="Annuleer" id="buttonAnnuleer">
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

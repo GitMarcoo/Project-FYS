@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assets/CSS/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+  <script src="Assets/js/configMain.js"></script>
+  <script src="Assets/js/header.js"></script>
+  <script src="Assets/js/taal.js"></script>
+</head>
+<body>
+
+<section id="test" class="header">
+  <nav>
+  <a href="index.html"> <img class="corendonLogo" src="Assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+
+<!--  <form class="headerZoekbalk" action="">-->
+<!--    <label class="zoekbalk">-->
+<!--      <input type="text" placeholder="Ik wil zoeken naar..." name="search">-->
+<!--    </label>-->
+<!--    <button class="zoekbalkButton" type="submit"><i class="fa fa-search"></i></button>-->
+<!--  </form>-->
+
+  <div class="nav-links" id="navLinks">
+    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+    <ul>
+      <li> <a href=""> <i class="fas fa-home"></i> Home</a> </li>
+      <!--      <li><a href="" data-translate="header.home">Home</a> </li>-->
+      <!--      <li><a href="" data-translate="header.contact"> Contact</a> </li>-->
+      <li> <a href=""> <i class="fa fa-fw fa-envelope"></i> Contact</a> </li>
+      <li> <a href=""> <i class="fas fa-user-circle"></i> Inloggen</a> </li>
+      <li> <a href=""> <i class="fas fa-language"></i></a> </li>
+
+
+      <li class="headerTaal">
+        <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+        <option value="nl">Nederlands</option>
+        <option value="en">English</option>
+        <option value="es">Espanol</option>
+      </select>
+      </li>
+    </ul>
+  </div>
+  <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+</nav>
+
+</section>
+</body>
+</html>

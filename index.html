@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/93d007b1a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Corendon</title>
+    <link rel="stylesheet" href="Assets/CSS/header.css">
+    <link rel="stylesheet" href="Assets/CSS/index.css">
+    <link rel="stylesheet" href="Assets/CSS/headerindex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.fys.cloud/fyscloud/0.0.4/fyscloud.min.js"></script>
+    <script src="Assets/js/configMain.js"></script>
+    <script src="Assets/js/index.js"></script>
+    <script src="Assets/js/taal.js"></script>
+</head>
+<body>
+
+<!--Dit is de header waar de navigatiebalk in zit-->
+
+<section id="test" class="header"> <nav>
+    <a href="index.html"> <img class="corendonLogo" src="Assets/img/corendonlogo.png" alt="CorendonLogo"></a>
+
+    <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        <ul>
+            <li> <i class="fas fa-home"> </i> <a href="" data-translate="header.home">Home</a> </li>
+            <li> <i class="fa fa-fw fa-envelope"></i> <a href="frontPage/Contact/contact.html" data-translate="header.contact">  Contact</a> </li>
+            <li> <i class="fas fa-user-circle"></i> <a href="frontPage/inlogpagina.html" data-translate="header.inlog">  Inloggen</a> </li>
+            <li> <i class="fas fa-language"></i> <a href=""> </a> </li>
+
+            <li class="headerTaal">
+                <label for="localizationLanguageSwitch"> </label>   <select id="localizationLanguageSwitch">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Espanol</option>
+            </select>
+            </li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-compass" onclick="showMenu()"></i>
+</nav>
+
+
+    <!--    Dit is de eerste gedeelte van de index -->
+    <div class="IntroTekst">
+        <h1 data-translate="blok1.titel"></h1>
+        <p data-translate="blok1.beschrijving"></p>
+        <a data-translate="blok1.redirect" href=#blok2 class="redirect"> </a>
+    </div>
+    <div class="LocatieTekst">
+        <i class="fa-solid fa-location-dot"></i>
+        <a data-translate="blok1.locatie" href="https://colombia.travel/en/colombian-andes" class="redirectLocatie">Andesgebergte, Zuid-Amerika</a>
+    </div>
+
+    <div id="arrowBlok1" class="doubleArrow">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+    </div>
+
+</section>
+
+<!--    Dit is de tweede gedeelte van de index -->
+<section class="blok2" id="blok2">
+
+    <div class="blok2">
+        <h1 data-translate="blok2.titel" class="blok2Titel"></h1>
+        <p data-translate="blok2.beschrijving" class="blok2Beschrijving"> Een tool waarin individuen met talloze interesses en hobbies elkaar
+            <br> kunnen opzoeken voor een gezamenlijke reis vol met avontuur en plezier.</p>
+
+        <!--    Dit is de carrousel -->
+        <div class="carousel-wrapper">
+
+            <div id="eersteFoto" class="carouselfoto">
+
+                <div id="overlayBoven5" class="overlayBoven">
+                    <p class="overlayBovenTitel"><span id="overlayBoven1"></span></p>
+                </div>
+
+                <div id="overlayBenedena" class="overlayBeneden">
+                    <p class="tekstlinks"><span id="overlayBenedenPE1"> </span></p>
+                    <p class="tekstlinks"><span id="overlayBeneden1"> </span></p>
+
+
+                </div>
+            </div>
+
+            <div id="tweedeFoto" class="carouselfoto">
+                <div id="overlayBoven2" class="overlayBoven"></div>
+                <div id="overlayBeneden2" class="overlayBeneden"></div>
+            </div>
+
+            <div id="derdeFoto" class="carouselfoto">
+                <div id="overlayBoven3" class="overlayBoven"></div>
+                <div id="overlayBeneden3" class="overlayBeneden"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    Dit is het derde gedeelte van de index -->
+<section class="blok3">
+
+    <div class="blok3Inhoud ">
+        <h1 data-translate="blok3.titel" class="blok3Titel"> Hoe werkt het?</h1>
+        <p data-translate="blok3.beschrijving" class="blok3Beschrijving"> Het hele proces om deel te nemen aan je favoriete activiteit is zo gedaan! Bekijk <br>
+            de simpele stappen hieronder! </p>
+
+        <ul class="blok3Uitleg1">
+            <li id="stap1">
+                <h2 data-translate="blok3.stap1t" > Stap 1</h2>
+                <p data-translate="blok3.stap1b">Meld je aan en <br> vul je hobby's en interesses in</p>
+            </li>
+            <li id="stap2">
+                <h2 data-translate="blok3.stap2t">Stap 2</h2>
+                <p data-translate="blok3.stap2b">Scroll door de posts waarmee je <br> gematcht wordt en kies er een uit</p>
+            </li>
+            <li id="stap3">
+                <h2 data-translate="blok3.stap3t">Stap 3</h2>
+                <p data-translate="blok3.stap3b">Neem contact op met de <br> eigenaar van de post </p>
+            </li>
+            <li id="stap4">
+                <h2 data-translate="blok3.stap4t">Stap 4</h2>
+                <p data-translate="blok3.stap4b">Bereid je voor op de activiteit! </p>
+            </li>
+        </ul>
+
+        <a data-translate="blok3.button" href="frontPage/register.html" class="aanmeldButton">Aanmelden</a>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+body {
+    background-color: #F9F4F6;
+    font-family: Satoshi-Regular;
+}
+
+label {
+    font-family: Satoshi-Regular;
+    font-size: 15px;
+}
+
+.interesse-box {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.user-box {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 100fr 100fr;
+    width: 65%;
+}
+
+.opslaan {
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    width: 20%
+}
+
+.opslaan:hover {
+
+    background: #FC6266;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.title {
+    font-family: Satoshi-Regular, cursive;
+    padding-top: 15px;
+    position: absolute;
+    left: 45%;
+}
+
+.profielbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 6%;
+    margin-right: 5%;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    height: auto;
+    position: absolute;
+    width: 250px;
+    box-shadow: 1px 1px 0px 1px #FC6266;
+
+
+}
+
+.profile {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+hr {
+    margin-right: 95%;
+    background-color: red;
+}
+
+.hr2 {
+    margin-right: 93%;
+    background-color: red;
+}
+
+.interesses {
+    color: black;
+    margin-left: auto;
+    text-align: left;
+    margin-left: 22%;
+    margin-top: 8%;
+}
+
+.interesses, ZoekVenster {
+    margin-top: 1%;
+}
+
+
+
+.name {
+    font-family: Satoshi-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+.url a {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    /*margin: 10px 0;*/
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.Register .active {
+    color: black;
+    font-size: 20px;
+    padding: 6px 8px;
+
+
+}
+
+.Register .active{
+    background-color: #F47174;
+    border-radius: 5px;
+    color: white;
+    width: auto;
+}
+
+.url a:hover, .url .active {
+    background-color: #F47174;
+    border-color: #F47174;
+    border-radius: 5px;
+    color: white;
+    margin-left: 14%;
+    width: 60%;
+    text-decoration: none;
+}
+
+/* Main */
+.main {
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 3%;
+    font-size: 28px;
+    width: 58%;
+    height: 100%;
+}
+
+.main h2 {
+    color: black;
+    font-family: Satoshi-Regular;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    margin-top: 4%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 1px #FC6266;
+    height: auto;
+    margin-bottom: auto;
+    padding: 20px 0 20px 50px;
+
+
+}
+
+.card-body, user-name, user-achternam, user-age {
+    width: 100%;
+
+}
+
+.zoekVensterInteresse1 {
+    z-index: 99;
+    position: absolute;
+    text-align: left;
+    width: 65%;
+    height: 30%;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 13%;
+    margin-top: 180px;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5px;
+    background: whitesmoke;
+}
+
+.zoekVensterInteresse2 {
+    z-index: 99;
+    position: absolute;
+    text-align: left;
+    width: 65%;
+    height: 30%;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 13%;
+    margin-top: 220px;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5px;
+    background: whitesmoke;
+}
+
+.zoekVensterInteresse3 {
+    z-index: 99;
+    position: absolute;
+    text-align: left;
+    width: 65%;
+    height: 30%;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 13%;
+    margin-top: 260px;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5px;
+    background: whitesmoke;
+}
+
+
+.zoekVensterTextVak {
+    border-top: 0.5px grey solid;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    max-height: 2px;
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.zoekVensterTextVak a{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.zoekVensterTextVak li {
+    cursor: pointer;
+}
+
+.zoekVensterTextVak li:hover {
+    background: grey;
+}
+
+.hidden {
+    display: none;
+}
+
+/**
+Nav bar
+ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+select {
+    background: rgb(229, 64, 64);;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+select:hover {
+    border: none;
+    color: white;
+    background: #E54040FF;
+}
+
+/*Navigatiebalk */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(229, 64, 64);
+    /*background: #eb1c24;*/
+}
+
+/* Corendon Logo linksbovenin*/
+nav img {
+    width: 180px;
+    background-color: #F9F4F6;
+    border-radius: 140px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+/*Uitlijnen van navigatiebuttons*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*Button decoratie*/
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px;
+}
+
+.fas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fa {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.far {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Animatie navigatieknoppen*/
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+/*Veranderingen navigatiebalk buttons*/
+.nav-links a:hover {
+    transition: 2s;
+    transition-delay: 1.2s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Icons verbergen*/
+nav .fa-solid {
+    display: none;
+}
+
+nav .fa-solid:hover {
+    border-radius: 10px;
+    background-color: #ef5350;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/*Veranderingen bij een scherm minder dan 700px*/
+@media (max-width: 700px) {
+    .IntroTekst h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    /*Buttons verplaatsen naar rechts in een window*/
+    .nav-links {
+        color: rgb(229, 64, 64);;
+        position: absolute;
+        background-color: rgb(229, 64, 64);
+        height: 300px;
+        text-align: left;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        z-index: 2;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #ffffff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 20px;
+        right: -20%;
+    }
+}
+
+.headerTaal {
+    margin-left: -25px;
+}
+
+.displaynone{
+    display: none;
+}
+
+@media (min-width: 701px) {
+    .nav-links{
+        display: block; !important;
+    }
+}
+
+
+
+
+
+@media (max-width: 720px) {
+    .profielbox {
+        display: flex; !important;
+        flex-direction: column; !important;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        min-width: 260px;
+    }
+    .profile {
+        height: 50px;
+    }
+    .flex-box{
+        display: flex; !important;
+        flex-direction: column;
+    }
+    .main{
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 260px;
+    }
+    .user-box{
+        width: 150px;
+        display: flex; !important;
+        flex-direction: column;
+
+    }
+}
+

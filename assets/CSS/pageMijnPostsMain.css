@@ -1,0 +1,241 @@
+/* General and body */
+body {
+    font-family: Satoshi-Regular;
+    background-color: #F9F4F6;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* Navigation */
+article {
+    background-color: white;
+    border-radius: 10px;
+    /*filter: drop-shadow(0px 4px 4px rgb(0,0,0,0.25));*/
+}
+
+
+
+    .Zoekbalk {
+        font-size: 1rem;
+    }
+
+    .postEditFooter textarea {
+        color: black;
+    }
+
+    .deleteIMG input:hover{
+        animation-name: scaleUp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .deleteIMG input{
+        animation-name: scaleDown;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    .editIMG input:hover{
+        animation-name: scaleUp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .editIMG input{
+        animation-name: scaleDown;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+
+
+    .postEditTextStyle{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .contact {
+        font-size: 120%;
+    }
+
+
+
+
+
+    .postEditFooter input, .postEditHeader input  {
+        font-size: 100%;
+    }
+
+    .postEditKnoppen input {
+        font-size: 100%;
+        font-weight: bold;
+    }
+
+    /* postcategorie*/
+.postCategorie .PostActiviteit {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.postCategorie .postPeriode {
+    margin: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FC6266;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.postCategorie .Bijschrift h1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.postCategorie .Bijschrift p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    padding:0;
+    height: 40px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    .roundEdges {
+        border-radius: 0px;
+        border: 0;
+        border-bottom: 0.5px grey solid;
+        outline: none;
+        background: whitesmoke;
+
+    }
+
+    @keyframes scaleUp {
+        from{}
+        to{transform: scale(110%)}
+    }
+@keyframes scaleDown {
+    from{transform: scale(110%)}
+    to{}
+}
+
+@font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('../fonts/Satoshi-Italic.woff') format('woff'),
+    url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+    url('../fonts/Satoshi-Black.woff') format('woff'),
+    url('../fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
